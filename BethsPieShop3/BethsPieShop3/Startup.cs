@@ -50,6 +50,8 @@ namespace BethsPieShop3
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
+
+            DbInitializer.Seed(app);
         }
     }
 }
