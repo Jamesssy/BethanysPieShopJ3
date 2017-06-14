@@ -23,6 +23,7 @@ namespace BethsPieShop3.Controllers
 
         public ViewResult List()
         {
+            throw new Exception("Error");
             PiesListViewModel piesListViewModel = new PiesListViewModel();
             piesListViewModel.Pies = _pieRepository.Pies;
 
